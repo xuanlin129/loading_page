@@ -44,8 +44,9 @@
   animation: animate 2s linear infinite;
 }
 
-.flex-center {
-  height: 100vh;
+.wrap {
+  height: 100vh; /*給 Safari 以外的瀏覽器讀取*/
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   justify-content: center;
   align-items: center;
